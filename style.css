@@ -1,0 +1,111 @@
+*{
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing: border-box;
+}
+body{
+    width: 100% ;
+    height : 100vh ; 
+    transition: all ease-in-out -5s;
+    padding : 40px
+
+}
+.open{
+    padding : 10px 20px ;
+    background-color:  rgb(20,45,136);
+    border: none;
+    color : #ffff ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100% ;
+    height : 100vh ;
+    background: rgba(100, 100, 100, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.popup{
+    width: 500px ;
+    height: 500px;
+    background: #ffff;
+    padding : 20px ;
+    border-radius: 10px ;
+    position: relative;
+    
+}
+.popup .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.form-group label span {
+    color: red;
+}
+.top .close {
+    color: red;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.popup form .form-group{
+    width: 100% ;
+    margin : 20px 0 ;
+}
+.popup .form-group label ,
+.popup .form-group input {
+    width: 100%;
+    margin : 10px ;
+}
+
+.popup .form-group input{
+    padding: 10px;
+    border: none;
+    background: #cbe9e9;
+    outline: none;
+    border-radius: 7px;
+}
+.delete{
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table th , .table td{
+    border : 1px solid green ;
+    padding : 8px ;
+    text-align: left;
+}
+.buttons{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.buttons button{
+    padding : 10px 20px ;
+    outline: none; 
+    border: none;
+    border-radius: 7px;
+    color: #848282;
+    cursor: pointer;
+
+}
+.buttons button:last-child{
+    margin-right: 10px;
+    background-color: rgb(20,45,136);
+    color: #ffff;
+}

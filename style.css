@@ -17,6 +17,10 @@ body{
     color : #ffff ;
     border-radius: 7px;
     cursor: pointer;
+    display: flex;
+    margin-left: 1000px;
+    margin-bottom: 20px;
+    
 }
 .container{
     position: absolute;
@@ -79,7 +83,15 @@ body{
     cursor: pointer;
     color: white;
     width: 100px;
-    height: 50px;
+    height: 20px;
+}
+.lu{
+    height: 20px;
+    width: 50px;
+    cursor: pointer;
+    background-color: rgb(6, 216, 93);
+    color: #ffff;
+    border: 1px solid rgb(6, 216, 93) ;
 }
 .table {
     border-collapse: collapse;

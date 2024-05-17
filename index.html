@@ -9,7 +9,7 @@
 <body>
     <div class="content">
       <div class="content-title">
-        <h2>Gestion des livres <span class="count"></span></h2>
+        <!--<h2> Gestion des livres <span class="count"></span></h2>-->
         <button id="open" class="open"><span>ajouter un nouveau livre</span></button>
       </div>
     </div>
@@ -19,18 +19,26 @@
             <table  class="table">
               <thead>
   <tr>
-    <th>id</th>
+    
     <th>Titre</th>
     <th>Auteur</th>
-    <th>Lu</th>
+    
+    <th>Suppression</th>
+    <th>lecture</th>
   </tr>
 </thead>
 <!--<tbody>
   <tr>
-    <td>dddddd</td>
-    <td>Sous l orage </td>
+    <td class="time" id="time">id</td>
+    <td id="titre">Sous l orage </td>
     <td>Seydou Badiane</td>
-    <td>lu <button class="delete">Supprimer</button></td>
+
+    <td>
+      <button class="lu" id="lu">lu<button></button> 
+      <button class="delete" id = "delete" >Supprimer</button>
+
+      </td>
+    
     
   </tr>
 </tbody>-->
@@ -46,15 +54,15 @@
              </div>
               <div class="form-group">
                 <label>Entrer le titre du livre<span  >*</span></label>
-                <input type="text" placeholder="entrer le titre svp.......">
+                <input type="text" placeholder="entrer le titre svp......." id="text">
               </div>
               <div class="form-group">
                 <label>Entrer l auteur du livre<span >*</span></label>
-                <input type="text" placeholder="entrer le nom de l auteur  svp.......">
+                <input type="text" placeholder="entrer le nom de l auteur  svp......." id="auteur">
               </div>
               <div class="buttons">
                 <button id="add">Annuler</button>
-                <button>Ajouter</button>
+                <button  type = "submit" class="addButton">Ajouter</button>
               </div>
            </form>
         </div>
